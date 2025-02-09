@@ -1,532 +1,508 @@
 <!DOCTYPE html>
-<html lang="en">
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<head>
-  <meta charset="UTF-8" />
-  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>ABOUT</title>
-  <link rel="icon" href="/images/favicon-enhanced.png">
-  <link rel="stylesheet" href="style.css" />
-  <link rel="manifest" href="manifest.json">
-  <link rel="apple-touch-icon" href="/images/favicon-enhanced.png" />
-  <meta name="theme-color" content="#000000" />
-  <link rel="stylesheet" text="text/CSS"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link rel="stylesheet" type="text/css"
-    href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
-  <link rel="stylesheet" text="text/CSS"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
-  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-</head>
-<style>
-  html {
-    scroll-behavior: smooth;
+        <!--=============== FAVICON ===============-->
+        <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
 
-  }
+        <!--=============== REMIX ICONS ===============-->
+        <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet">
 
-  .hidden {
-    visibility: hidden;
-  }
+        <!--=============== CSS ===============-->
+        <link rel="stylesheet" href="styles.css">
 
-  .back-top-wrap {
-    position: fixed;
-    bottom: 5rem;
-    right: 1rem;
-    background-color: #80F7D1;
-    padding: 1rem 1.2rem;
-    border-radius: 50%;
-    cursor: pointer;
-    transition: .3s ease-in-out;
-    z-index: 100;
-  }
+        <title>Responsive plants website - Bedimcode</title>
+    </head>
+    <body>
+        <!--==================== HEADER ====================-->
+        <header class="header" id="header">
+            <nav class="nav container">
+                <a href="#" class="nav__logo">
+                    <i class="ri-leaf-line nav__logo-icon"></i> Plantex
+                </a>
 
-  .back-top-wrap:hover {
-    background-color: #00a2ff;
-    color: #80F7D1;
-  }
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item">
+                            <a href="#home" class="nav__link active-link">Home</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#about" class="nav__link">About</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#products" class="nav__link">Products</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#faqs" class="nav__link">FAQs</a>
+                        </li>
+                        <li class="nav__item">
+                            <a href="#contact" class="nav__link">Contact Us</a>
+                        </li>
+                    </ul>
 
-  .back-top-wrap:hover .fas.fa-arrow-up {
-    color: white;
-  }
+                    <div class="nav__close" id="nav-close">
+                        <i class="ri-close-line"></i>
+                    </div>
+                </div>
 
-  .fas.fa-arrow-up {
-    color: #00488F;
-    transition: 0.3s ease-in-out;
-  }
-</style>
+                <div class="nav__btns">
+                    <!-- Theme change button -->
+                    <i class="ri-moon-line change-theme" id="theme-button"></i>
 
-<body onload="myFunction()">
-  <div class="loading-wrapper">
-    <img src="LOGO.png" id="loading" />
-  </div>
+                    <div class="nav__toggle" id="nav-toggle">
+                        <i class="ri-menu-line"></i>
+                    </div>
+                </div>
+            </nav>
+        </header>
 
-  <!-- Back to top button -->
-  <div id="back-top-div" class="back-top-wrap">
-    <i class="fas fa-arrow-up"></i>
-  </div>
-  <header>
-    <nav class="nav" id="nav">
-      <div style="display: flex;">
-        <img src="LOGO.png" alt="Logo" class="logo" /><span style="color:white; font-size: 35px;margin-top: 10px;">CALM HEVEN</span>
+        <main class="main">
+          
+            <section class="home" id="home">
+                <div class="home__container container grid">
+                    <img src="assets/img/home.png" alt="" class="home__img">
+
+                    <div class="home__data">
+                        <h1 class="home__title">
+                            Plants will make <br> your life better
+                        </h1>
+                        <p class="home__description">
+                            Stress relieving indoor plants can reduce worry and tension, promoting relaxation and calmness.
+                        </p>
+                        <a href="#about" class="button button--flex">
+                            Explore <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+
+                    <div class="home__social">
+                        <span class="home__social-follow">Follow Us</span>
+
+                        <div class="home__social-links">
+                            <a href="https://www.facebook.com/" target="_blank" class="home__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" target="_blank" class="home__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" target="_blank" class="home__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== ABOUT ====================-->
+            <section class="about section container" id="about">
+                <div class="about__container grid">
+                    <img src="assets/img/about.png" alt="" class="about__img">
+
+                    <div class="about__data">
+                        <h2 class="section__title about__title">
+                            Who we really are & <br> why choose us
+                        </h2>
+
+                        <p class="about__description">
+                            We have over 4000+ unbiased reviews and our customers 
+                            trust our plant process and delivery service every time
+                        </p>
+
+                        <div class="about__details">
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We always deliver on time.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We give you guides to protect and care for your plants.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                We always come over for a check-up after sale.
+                            </p>
+                            <p class="about__details-description">
+                                <i class="ri-checkbox-fill about__details-icon"></i>
+                                100% money back guaranteed.
+                            </p>
+                        </div>
+
+                        <a href="#" class="button--link button--flex">
+                            Shop Now <i class="ri-arrow-right-down-line button__icon"></i>
+                        </a>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== STEPS ====================-->
+            <section class="steps section container">
+                <div class="steps__bg">
+                    <h2 class="section__title-center steps__title">
+                        Steps to start your <br> plants off right
+                    </h2>
+
+                    <div class="steps__container grid">
+                        <div class="steps__card">
+                            <div class="steps__card-number">01</div>
+                            <h3 class="steps__card-title">Choose Plant</h3>
+                            <p class="steps__card-description">
+                                We have several varieties plants you can choose from.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">02</div>
+                            <h3 class="steps__card-title">Place an order</h3>
+                            <p class="steps__card-description">
+                                Once your order is set, we move to the next step which is the shipping.
+                            </p>
+                        </div>
+
+                        <div class="steps__card">
+                            <div class="steps__card-number">03</div>
+                            <h3 class="steps__card-title">Get plants delivered</h3>
+                            <p class="steps__card-description">
+                                Our delivery process is easy, you receive the plant direct to your door.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== PRODUCTS ====================-->
+            <section class="product section container" id="products">
+                <h2 class="section__title-center">
+                    Check out our <br> products
+                </h2>
+
+                <p class="product__description">
+                    Here are some selected plants from our showroom, all are in excellent 
+                    shape and has a long life span. Buy and enjoy best quality.
+                </p>
+
+                <div class="product__container grid">
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product1.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Cacti Plant</h3>
+                        <span class="product__price">$19.99</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product2.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Cactus Plant</h3>
+                        <span class="product__price">$11.99</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product3.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Aloe Vera Plant</h3>
+                        <span class="product__price">$7.99</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product4.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Succulent Plant</h3>
+                        <span class="product__price">$5.99</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product5.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Succulent Plant</h3>
+                        <span class="product__price">$10.99</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+
+                    <article class="product__card">
+                        <div class="product__circle"></div>
+
+                        <img src="assets/img/product6.png" alt="" class="product__img">
+
+                        <h3 class="product__title">Green Plant</h3>
+                        <span class="product__price">$8.99</span>
+
+                        <button class="button--flex product__button">
+                            <i class="ri-shopping-bag-line"></i>
+                        </button>
+                    </article>
+                </div>
+            </section>
+
+            <!--==================== QUESTIONS ====================-->
+            <section class="questions section" id="faqs">
+                <h2 class="section__title-center questions__title container">
+                    Some common questions <br> were often asked
+                </h2>
+
+                <div class="questions__container container grid">
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    My flowers are falling off or dying?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What causes leaves to become pale?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    What causes brown crispy leaves?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="questions__group">
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do i choose a plant?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    How do I change the pots?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+
+                        <div class="questions__item">
+                            <header class="questions__header">
+                                <i class="ri-add-line questions__icon"></i>
+                                <h3 class="questions__item-title">
+                                    Why are gnats flying around my plant?
+                                </h3>
+                            </header>
+
+                            <div class="questions__content">
+                                <p class="questions__description">
+                                    Plants are easy way to add color energy and transform your 
+                                    space but which planet is for you. Choosing the right plant.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!--==================== CONTACT ====================-->
+            <section class="contact section container" id="contact">                
+                <div class="contact__container grid">
+                    <div class="contact__box">
+                        <h2 class="section__title">
+                            Reach out to us today <br> via any of the given <br> information
+                        </h2>
+
+                        <div class="contact__data">
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Call us for instant support</h3>
+                                <span class="contact__description">
+                                    <i class="ri-phone-line contact__icon"></i>
+                                    +999 888 777
+                                </span>
+                            </div>
+
+                            <div class="contact__information">
+                                <h3 class="contact__subtitle">Write us by mail</h3>
+                                <span class="contact__description">
+                                    <i class="ri-mail-line contact__icon"></i>
+                                    user@email.com
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form action="" class="contact__form">
+                        <div class="contact__inputs">
+                            <div class="contact__content">
+                                <input type="email" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Email</label>
+                            </div>
+
+                            <div class="contact__content">
+                                <input type="text" placeholder=" " class="contact__input">
+                                <label for="" class="contact__label">Subject</label>
+                            </div>
+
+                            <div class="contact__content contact__area">
+                                <textarea name="message" placeholder=" " class="contact__input"></textarea>                              
+                                <label for="" class="contact__label">Message</label>
+                            </div>
+                        </div>
+
+                        <button class="button button--flex">
+                            Send Message
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--==================== FOOTER ====================-->
+        <footer class="footer section">
+            <div class="footer__container container grid">
+                <div class="footer__content">
+                    <a href="#" class="footer__logo">
+                        <i class="ri-leaf-line footer__logo-icon"></i> Plantex
+                    </a>
+
+                    <h3 class="footer__title">
+                        Subscribe to our newsletter <br> to stay update
+                    </h3>
+
+                    <div class="footer__subscribe">
+                        <input type="email" placeholder="Enter your email" class="footer__input">
+
+                        <button class="button button--flex footer__button">
+                            Subscribe
+                            <i class="ri-arrow-right-up-line button__icon"></i>
+                        </button>
+                    </div>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Our Address</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">1234 - Peru</li>
+                        <li class="footer__information">La Libertad - 43210</li>
+                        <li class="footer__information">123-456-789</li>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">Contact Us</h3>
+
+                    <ul class="footer__data">
+                        <li class="footer__information">+999 888 777</li>
+                        
+                        <div class="footer__social">
+                            <a href="https://www.facebook.com/" class="footer__social-link">
+                                <i class="ri-facebook-fill"></i>
+                            </a>
+                            <a href="https://www.instagram.com/" class="footer__social-link">
+                                <i class="ri-instagram-line"></i>
+                            </a>
+                            <a href="https://twitter.com/" class="footer__social-link">
+                                <i class="ri-twitter-fill"></i>
+                            </a>
+                        </div>
+                    </ul>
+                </div>
+
+                <div class="footer__content">
+                    <h3 class="footer__title">
+                        We accept all credit cards
+                    </h3>
+
+                    <div class="footer__cards">
+                        <img src="assets/img/card1.png" alt="" class="footer__card">
+                        <img src="assets/img/card2.png" alt="" class="footer__card">
+                        <img src="assets/img/card3.png" alt="" class="footer__card">
+                        <img src="assets/img/card4.png" alt="" class="footer__card">
+                    </div>
+                </div>
+            </div>
+
+            <p class="footer__copy">&#169; Bedimcode. All rigths reserved</p>
+        </footer>
         
-      </div>
-      <div class="nav-links" id="navLinks">
-        <ul class="links" id="navmenu">
-          <li><a href="#">HOME</a></li>
-          <li><a href="#about">ABOUT</a></li>
-          <li><a href="#services">SERVICES </a></li>
-          <li><a href="s">SHOP</a></li>
-        </ul>
-      </div>
-      <button class="login-button"><a href="html/login.html">SignUp / Login</a></button>
-      <div class="hamburger" id="ham">
-        <i class="cancel fa-solid fa-xmark"></i>
+        <!--=============== SCROLL UP ===============-->
+        <a href="#" class="scrollup" id="scroll-up"> 
+            <i class="ri-arrow-up-fill scrollup__icon"></i>
+        </a>
 
-        <svg class="burger" stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024" height="1em" width="1em"
-          xmlns="http://www.w3.org/2000/svg">
-          <path
-            d="M904 160H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0 624H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8zm0-312H120c-4.4 0-8 3.6-8 8v64c0 4.4 3.6 8 8 8h784c4.4 0 8-3.6 8-8v-64c0-4.4-3.6-8-8-8z">
-          </path>
-        </svg>
-      </div>
-    </nav>
-    <div class="menu" id="menu">
-      <ul class="menu-link">
-        <li><a href="#">HOME</a></li>
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#services">SERVICES </a></li>
-        <li><a href="html/contact.html">CONTACT US </a></li>
-      </ul>
-    </div>
-    <div class="content">
-      <h1>WELCOME TO CALM HEVEN</h1>
-      <div class="container">
-        <h3><span class="auto-type" style="font-size: 40px;font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;"></a></span></h3>
-      </div>
-      <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
-      <script>
-        var typed = new Typed(".auto-type", {
-          strings: ["The one-step solution to get relief from your stress. Live a stress-free life!"],
-          typeSpeed: 50,
-          backspeed: 50,
-          loop: true
-        })
-      </script>
-      <a href="#services" class="rainbow-button" alt="Explore"></a>
-    </div>
-
-  </header>
-
-  <section id="about" class="about">
-    <h1 data-aos="flip-right">About Us</h1>
-    <div class="max-width">
-      <div data-aos="zoom-in" class="photo"><img src="./images/about.jpg" alt="" height="300px" width="330px"></div>
-      <div class="about-content">
-        <p data-aos="fade-left" class="text-1"> We are a team of open source contributors who have created this website
-          Calm Heven with the aim to provide a <span>one step solution</span> to get relief from stress. </p>
-        <p data-aos="fade-left" class="text-3">We hope that everyone can live a <span>stress free life </span>with the
-          help of<span> sukoon.</span></p>
-      </div>
-    </div>
-    <h3><span style="color: rgb(91, 134, 150);">MEET OUR MEMBERS</span></h3>
-
-    <div class="box">
-      <div data-aos="fade-up" ddata-aos-duration="800" class="card">
-        <img src="./images/soumyadeep.jpg" alt="soumyadeep" loading="lazy">
-        <h5>Soumyadeep Dhali</h5>
-        <div class="pra">
-          <p>Member</p>
-          <a href="https://soumyadeep.bio.link"><button>Let's Connect</button></a>
-        </div>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="800" class="card">
-        <img src="./images/susmita.jpg" alt="" loading="lazy">
-        <h5>Susmita Dey</h5>
-        <div class="pra">
-          <p>Head of The Team</p>
-          <a href="https://bio.link/susmitadey"><button>Let's Connect</button></a>
-        </div>
-      </div>
-      <div data-aos="fade-up" data-aos-duration="800" class="card">
-        <img src="./images/chaitri.jpg" alt="chaitri" loading="lazy">
-        <h5>Chaitri Saha Chowdhury</h5>
-        <div class="pra">
-          <p class="p">Member</p>
-          <a href="https://bio.link/chaitri"><button class="he">Let's Connect</button></a>
-        </div>
-
-      </div>
-
-
-      <div data-aos="fade-up" data-aos-duration="800" class="card">
-        <img src="./images/sasanka.jpg" alt="sasanka" loading="lazy">
-        <h5>Sasanka Kundu</h5>
-        <div class="pra">
-          <p>Member</p>
-          <a href="https://bio.link/sasankakundu"><button>Let's Connect</button></a>
-        </div>
-      </div>
-
-    </div>
-  </section>
-
-  <!-- SERVICES SECTION -->
-  <section id="services">
-    <h1>Our Services</h1>
-    <div data-aos="zoom-in" data-aos-duration="800" class="container">
-      <div class="responsive audio">
-        <div class="round-image">
-          <img src="./images/audio.png" alt="audio" loading="lazy" />
-        </div>
-        <div class="description">
-          <h2>Audio Therapy</h2>
-          <p>
-            Listening to music & other audio files often enlightens our mood.
-          </p>
-          <a href="audioTherapy.html">
-            Let's Explore
-          </a>
-        </div>
-      </div>
-      <div data-aos="zoom-in" data-aos-duration="800" class="responsive yoga">
-        <div class="round-image">
-          <img src="./images/yoga.png" alt="yoga" loading="lazy" />
-        </div>
-        <div class="description">
-          <h2>Yoga Therapy</h2>
-          <p>
-            Yoga and exercise plays a very important role in our lives.
-          </p>
-          <a href="yogatherapy.html">
-            Let's Explore
-          </a>
-        </div>
-      </div>
-      <div data-aos="zoom-in" data-aos-duration="800" class="responsive laugh">
-        <div class="round-image">
-          <img src="./images/laughing.png" alt="laughing" />
-        </div>
-        <div class="description">
-          <h2>Laughing Therapy</h2>
-          <p>
-            Laughing is the only medicine which refreshes our mind.
-          </p>
-          <a href="laughTherapy.html">
-            Let's Explore
-          </a>
-        </div>
-      </div>
-      <div data-aos="zoom-in" data-aos-duration="800" class="responsive talk">
-        <div class="round-image">
-          <img src="./images/talking.png" loading="lazy" alt="talking" />
-        </div>
-        <div class="description">
-          <h2>Games</h2>
-          <p>
-            Playing Games Can Reduce Stress.
-          </p>
-          <a href="html/talkingTherapy.html">
-            Let's Explore
-          </a>
-        </div>
-      </div>
-      <div data-aos="zoom-in" data-aos-duration="800" class="responsive doctor">
-        <div class="round-image">
-          <img src="./images/doctor.png" alt="doctor" loading="lazy" />
-        </div>
-        <div class="description">
-          <h2>Consult A Doctor</h2>
-          <p>
-            If you're facing too many problems, you should consult a doctor.
-          </p>
-          <a href="https://www.practo.com/counselling-psychology" target="_blank">
-            Let's Explore
-          </a>
-        </div>
-      </div>
-      <div class="responsive special">
-        <div class="round-image">
-          <img src="./images/specialtherapy.jpg" alt="special" loading="lazy" />
-        </div>
-        <div class="description">
-          <h2>Special Therapy</h2>
-          <p>
-            If you need special attention and help from us.
-          </p>
-          <a href="specialTherapy.html" target="_blank">
-            Let's Explore
-          </a>
-        </div>
-      </div>
-      
-    </div>
-  </section>
-
-  <!-- Testimonials Section -->
-  <!-- Testimonials Section -->
-  <section id="testimonial" class="section-100">
-    
-    <div class="testimonial-view">
-      <div class="owl-carousel">
-        <div class="testimonial-box">
-
-          <figure class="testimonal-Card">
-            <blockquote> I've explored all therapy pages, but my fav one was audio therapy. It have different calming &
-              mood soothing sounds, there are also many podcasts as well. Sukoon website really helped me to get relief
-              from my stress.
-              <div class="arrow"></div>
-            </blockquote>
-            <img src="./images/Mohit.jpg" alt="sample3" />
-            <div class="author">
-              <h5>Mohit Namdev</h5>
-            </div>
-        </div>
-        <div class="testimonial-box">
-          <!-- <i class="fa fa-quote-left quote-icon"></i> -->
-          <figure class="testimonal-Card hover">
-            <blockquote> I'm really loving the laughing therapy and reading therapy pages. The standup videos present in
-              the laughing therapy page cheer me up, and the quotes present in the reading therapy page are really
-              motivating. <div class="arrow"></div>
-            </blockquote>
-            <img src="./images/vanshita.jpg" alt="sample47" />
-            <div class="author">
-              <h5>Vanshita Mathur</h5>
-            </div>
-          </figure>
-        </div>
-        <div class="testimonial-box">
-          <!-- <i class="fa fa-quote-left quote-icon"></i> -->
-          <figure class="testimonal-Card">
-            <blockquote>As a student, I love using this website, sukoon is like having a personal therapist. Features
-              and UI of the website is amazing and it really helped me to manage a lot of my anxiety and stress. I also
-              feel much supported by the lines of quotes than a human.
-              <div class="arrow"></div>
-            </blockquote>
-            <img src="./images/Shravani Kaware.jpg" alt="sample17" />
-            <div class="author">
-              <h5>Shravani Kaware</h5>
-            </div>
-          </figure>
-
-        </div>
-        <div class="testimonial-box">
-          <!-- <i class="fa fa-quote-left quote-icon"></i> -->
-          <figure class="testimonal-Card">
-            <blockquote>I'm really liking Audio, Reading and Yoga therapy because it's helpful for me during studying
-              time and last but not least Laughing therapy is also my favorite because whenever I am feeling lonely at
-              that time I am watching my childhoods cartoon show like Mr. bean and also watching memes.
-              <div class="arrow"></div>
-            </blockquote>
-            <img src="./images/Kelvin Parmar.jpg" alt="sample17" />
-            <div class="author">
-              <h5>Kelvin Parmar</h5>
-            </div>
-          </figure>
-
-        </div>
-      </div>
-    </div>
-    </div>
-  </section>
-  <!-- Faq section -->
-  <section class="faq">
-    <div class="faq_heading">
-      <h1>Frequently Asked Questions</h1>
-    </div>
-    <div class="accordion">
-      <div class="accordion__item">
-        <button class="accordion__btn">
-
-          <span class="accordion__caption"><i class="far fa-lightbulb"></i>Who are we and what do we do?</span>
-          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
-        </button>
-
-        <div class="accordion__content">
-          <p>We are a team of open source contributors who have created this website "sukoon"
-            with the aim
-            to provide a one step solution to get relief from stress. We hope that everyone can live a
-            stress free life with the help of sukoon.</p>
-        </div>
-      </div>
-
-      <div class="accordion__item">
-        <button class="accordion__btn">
-
-          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What are the services we offer?</span>
-          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
-        </button>
-
-        <div class="accordion__content">
-          <p>We offer multiple services like:
-            <br>
-            1. Audio Therapy
-            <br>
-            2. Yoga Therapy
-            <br>
-            3. Laughing Therapy
-            <br>
-            4. Talking Therapy
-            <br>
-            5. Doctor Consultation
-            <br>
-           
-          </p>
-        </div>
-      </div>
-
-      <div class="accordion__item">
-        <button class="accordion__btn">
-
-          <span class="accordion__caption"><i class="far fa-lightbulb"></i>How can you Contact Us?</span>
-          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
-        </button>
-
-        <div class="accordion__content">
-          <p> You can contact us via <a class="email" href="mailto:sukoon665@gmail.com">calmheven@gmail.com</a>
-          </p>
-        </div>
-      </div>
-
-      <div class="accordion__item">
-        <button class="accordion__btn">
-
-          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Reading Therapy?</span>
-          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
-        </button>
-
-        <div class="accordion__content">
-          <p>Reading therapy is a creative art therapy that uses literature to support good
-            mental health and is a versatile and cost-effective treatment. It includes storytelling or the reading of
-            specific texts.</p>
-        </div>
-      </div>
-
-      <div class="accordion__item">
-        <button class="accordion__btn">
-
-          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Audio Therapy?</span>
-          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
-        </button>
-
-        <div class="accordion__content">
-          <p>Audio Therapy includes auditory and vibratory inputs which are used to influence a person's psychological
-            state, includes sound healing, vibroacoustic sound therapy, music, and music therapy.</p>
-        </div>
-      </div>
-
-      <div class="accordion__item">
-        <button class="accordion__btn">
-
-          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Yoga Therapy?</span>
-          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
-        </button>
-
-        <div class="accordion__content">
-          <p>Yoga therapy uses yoga postures, breathing exercises, meditation, and guided imagery to improve mental and
-            physical health.</p>
-        </div>
-      </div>
-
-      <div class="accordion__item">
-        <button class="accordion__btn">
-
-          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Laughing Therapy?</span>
-          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
-        </button>
-
-        <div class="accordion__content">
-          <p>Laughing therapy uses humor to help relieve pain and stress and improve a person's sense of well-being
-            through jokes and playful exercises that encourage hearty, continuous, and lively laughter.</p>
-        </div>
-      </div>
-
-      <div class="accordion__item">
-        <button class="accordion__btn">
-
-          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Talking Therapy?</span>
-          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
-        </button>
-
-        <div class="accordion__content">
-          <p>Talking therapy involves talking to someone to help deal with negative feelings or other mental health
-            problems. It helps shy individuals open up their problems to others so that they can help them overcome
-            them.</p>
-        </div>
-      </div>
-
-      <div class="accordion__item">
-        <button class="accordion__btn">
-
-          <span class="accordion__caption"><i class="far fa-lightbulb"></i>What is Child Therapy?</span>
-          <span class="accordion__icon"><i class="fa fa-plus"></i></span>
-        </button>
-
-        <div class="accordion__content">
-          <p>Child therapy includes the watching of cute videos and images of children, as children make us
-            forget about our problems with their innocence and cuteness.</p>
-        </div>
-      </div>
-
-     
-
+        <!--=============== SCROLL REVEAL ===============-->
+        <script src="assets/js/scrollreveal.min.js"></script>
         
-      
-    </div>
-    </div>
-  </section>
-  <section style="height: 50px; width: 100%; background-color: white; padding:10px;text-align: center;">
-    <div class="footer">
-        <p>&copy; All Rights Reserved 2025 </p>
-    </div>
-</section>
-
- 
-
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-  <script>
-
-    let preloader = document.querySelector(".loading-wrapper");
-    function myFunction() {
-      preloader.style.display = 'none';
-      document.body.style.overflow = 'auto';
-    }
-    let navbar = document.querySelector("#nav");
-    let navmenu = document.querySelector("#navmenu");
-
-    window.onscroll = function () {
-      if (window.pageYOffset >= navmenu.offsetTop) {
-        navbar.classList.add("sticky");
-      } else {
-        navbar.classList.remove("sticky");
-      }
-    };
-
-    window.onscroll = () => {
-      if (window.scrollY > 100) {
-        navbar.classList.add('nav-active');
-      } else {
-        navbar.classList.remove('nav-active');
-      }
-    };
-  </script>
-  <script>
-    if ('serviceWorker' in navigator) {
-      window.addEventListener('load', () => {
-        navigator.serviceWorker.register('./serviceworker.js')
-          .then((reg) => console.log('Success', reg.scope))
-          .catch((err) => console.log('Error', err))
-      })
-    }
-  </script>
-  <script src="js/index.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-  <script src="js/script.js"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
-  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-  <script>
-    AOS.init();
-  </script>
-</body>
-
+        <!--=============== MAIN JS ===============-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
